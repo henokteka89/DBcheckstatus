@@ -13,11 +13,11 @@ GO
 Create procedure [dbo].[DBA_DatabaseStateCheck]
 (
 
-@emailTo VARCHAR(100) = 'mailto:kabdahlak123@gmail.com;mailto:henokteka89@gmail.com',
+@emailTo VARCHAR(100) = 'mailto:xyzabcd@gmail.com;mailto:henokxyzabc@gmail.com',
 @Severity varchar(32) = 'Warning'
 ,@AlertType varchar(32) = 'DatabaseState'
 
-,@PageTo VARCHAR(200) = 'mailto:kabdahlak123@gmail.com;mailto:henokteka89@gmail.com;mailto:henokteka87@yahoo.com'
+,@PageTo VARCHAR(200) = 'mailto:abdahxyz123@gmail.com;mailto:henokxyzabc@gmail.com;mailto:henokxyzabc87@yahoo.com'
 ,@excluded_dbs sysname=null
 
 )
@@ -85,7 +85,7 @@ SET @body = @body + @xml
 -- Send email
 EXEC msdb.dbo.sp_send_dbmail 
 @profile_name = 'HenokEmailProfile',
-@recipients = 'kabdahlak123@gmail.com;henokteka89@gmail.com',
+@recipients = 'kabdahlabcd123@gmail.com;henokxyzabc89@gmail.com',
 @body_format = 'HTML',
 @subject = @title,
 @body = @body;
